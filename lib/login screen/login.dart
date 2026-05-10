@@ -4,6 +4,8 @@ class loginScreen extends StatelessWidget {
   loginScreen({super.key});
 
   final _formkey = GlobalKey<FormState>();
+  final TextEditingController phoneController = TextEditingController();
+  final TextEditingController passController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +20,7 @@ class loginScreen extends StatelessWidget {
           children: [
             SizedBox(height: 20,),
             TextFormField(
+              controller: phoneController,
               decoration: InputDecoration(border: OutlineInputBorder()),
               validator: (value) {
                 if (value == null) {
@@ -30,6 +33,7 @@ class loginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             TextFormField(
+              controller: passController,
               decoration: InputDecoration(border: OutlineInputBorder()),
               validator: (value){
                 if (value == null) {
