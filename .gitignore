@@ -1,48 +1,51 @@
-  # Miscellaneous
-  *.class
-  *.log
-  *.pyc
-  *.swp
-  .DS_Store
-  .atom/
-  .build/
-  .web/
-  .windows/
-  windows/      <-- এটি যোগ করা জরুরি যাতে C++ ফাইলগুলো ইগনোর হয়
-  .buildlog/
-  .history
-  .svn/
-  .swiftpm/
-  migrate_working_dir/
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.web/
+.windows/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
 
-  # IntelliJ related
-  *.iml
-  *.ipr
-  *.iws
-  .idea/
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
 
-  # VS Code
-  .vscode/
+# VS Code related
+.vscode/
 
-  # Flutter/Dart/Pub related
-  **/doc/api/
-  **/ios/Flutter/.last_build_id
-  .dart_tool/
-  .flutter-plugins
-  .flutter-plugins-dependencies
-  .pub-cache/
-  .pub/
-  /build/
-  /coverage/
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+/coverage/
 
-  # Android SDK Path
-  **/android/local.properties   <-- এটি অবশ্যই যোগ করবেন
+# Windows related (Ignoring only specific build artifacts)
+# windows/ ফোল্ডার পুরোটা বাদ দেবেন না, শুধু নিচের অংশগুলো দিন:
+windows/flutter/ephemeral/
+windows/CMakeLists.txt.user
 
-  # Symbolication and Obfuscation
-  app.*.symbols
-  app.*.map.json
+# Android related
+**/android/local.properties
+**/android/key.properties
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
 
-  # Android Studio build artifacts
-  /android/app/debug
-  /android/app/profile
-  /android/app/release
+# Symbolication and Obfuscation
+app.*.symbols
+app.*.map.json
