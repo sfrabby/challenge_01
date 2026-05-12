@@ -48,6 +48,8 @@ class loginScreen extends StatelessWidget {
             SizedBox(height: 20,width: double.infinity,child: ElevatedButton(onPressed: (){
               if(_formkey.currentState!.validate()){
                 print("success");
+                passController.clear();
+                phoneController.clear();
 
               }
             }, child: Text("Login")),)
